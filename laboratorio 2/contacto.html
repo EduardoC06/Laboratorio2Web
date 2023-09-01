@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <form class="formulario">
+        <div>
+            <label>Nombre</label>
+            <input type="text" name="nom">
+        </div>
+        <div>
+            <label>Apellido</label>
+            <input type="text" name="apel">
+        </div>
+        <div>
+            <label>Distrito</label>
+            <select name="Distrit">
+                <option value="">Arequipa</option>
+                <option value="">Lima</option>
+            </select>
+        </div>
+        <div>
+            <label> Tipo de pago: </label>
+            <div>
+                <input type="radio" name="pago" value="Masculino">Contado
+                <input type="radio" name="pago" value="Masculino">Efectivo
+            </div>
+        </div>
+
+        <div>
+            <label> Intereses</label>
+            <div>
+                <input type="checkbox" name="gusto"> Juego de mesa
+                <br>
+                <input type="checkbox" name="gusto"> Jueguetes para niño
+                <br>
+                <input type="checkbox" name="gusto"> Jueguetes para niña
+            </div>
+
+        </div>
+
+        <div>
+            <label>Comentario</label>
+            <textarea name="Comentario:"></textarea>
+        </div>
+        <div>
+            <input type="reset" name="reinicar" value="Reiniciar">
+            <input type="submit" name="enviar" value="Enviar">
+        </div>
+
+    </form>
+</body>
+<style>
+    .formulario {
+        display: flex;
+        align-items: cen;
+        justify-content: space-between;
+        flex-direction: column;    
+        border: 2px solid black;
+        margin-right: 55em;
+    }
+
+    .formulario div {
+        padding: 10px;
+    }
+
+    .formulario label {
+        margin-right: 100px;
+
+    }
+</style>
+
+</html>
